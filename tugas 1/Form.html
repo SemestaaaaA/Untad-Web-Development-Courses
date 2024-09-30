@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Form Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: #9c9c9c;
+        }
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff1b;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(117, 117, 117, 0.1);
+        }
+        label, input, select, textarea {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            color: #ffffff80;
+        }
+        input, select, textarea {
+            padding: 0px;
+            font-size: 16px;
+            border: 1px solid #565656;
+            background-color: #ffffff49;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: rgb(76, 76, 76);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        a {
+            color: #eaeaea;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <Button><a href="index2.html">BACK</a></Button>
+
+    <h2 style="text-align: center;">HTML Form Example</h2>
+    <form action="/submit-form" method="POST">
+        <!-- Text input field -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <!-- Email input field -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <!-- Select dropdown -->
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="Indonesia">Indonesia</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+        </select>
+
+        <!-- Radio buttons -->
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="Choose" disabled selected>Choose</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+        
+
+        <!-- Textarea -->
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <!-- Checkbox -->
+        <input type="checkbox" id="agree" name="agree" required>
+        <label for="agree">I agree to the terms and conditions</label>
+
+        <!-- Submit button -->
+        <button type="submit">SUBMIT</button>
+        <Button type="reset">RESET</Button>
+    </form>
+
+</body>
+</html>
